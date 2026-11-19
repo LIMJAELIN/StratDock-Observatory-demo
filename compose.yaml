@@ -1,0 +1,18 @@
+services:
+  demo-db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${DEMO_DB_NAME:-demo_catalog}
+      POSTGRES_USER: demo_admin
+      POSTGRES_PASSWORD: ${DEMO_ADMIN_PASSWORD:?Set a local admin password in .env}
+      DEMO_SOURCE_PASSWORD: ${DEMO_SOURCE_PASSWORD:?Set a local reader password in .env}
+    ports:
+      - "127.0.0.1:${DEMO_DB_PORT:-55432}:5432"
+    volumes:
+      - ./database/init.sh:/docker-entrypoint-initdb.d/01-init.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U demo_admin -d ${DEMO_DB_NAME:-demo_catalog}"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped

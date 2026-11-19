@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+  <title id="title">읽기 전용 관측 데모 화면</title>
+  <desc id="desc">합성 데이터만 표시하는 React 관측 화면. 정상, 중복 출처, 출처 누락 사례를 구분합니다.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1c2940"/><stop offset=".6" stop-color="#111827"/></linearGradient>
+  </defs>
+  <rect width="1200" height="840" fill="url(#bg)"/>
+  <g font-family="Segoe UI, Malgun Gothic, sans-serif">
+    <rect x="34" y="25" width="32" height="32" rx="9" fill="#15272d" stroke="#54d6b2"/>
+    <circle cx="50" cy="41" r="6" fill="none" stroke="#54d6b2" stroke-width="2"/>
+    <text x="78" y="47" fill="#f3f4f6" font-size="16" font-weight="700">관측 데모</text>
+    <circle cx="1054" cy="42" r="3" fill="#63d9ba"/>
+    <text x="1066" y="47" fill="#a7f3d0" font-size="12">합성 데이터</text>
+    <line x1="34" y1="78" x2="1166" y2="78" stroke="#293346"/>
+    <text x="34" y="144" fill="#63d9ba" font-family="Consolas, monospace" font-size="12" letter-spacing="2">READ-ONLY DATA FLOW</text>
+    <text x="34" y="220" fill="#f9fafb" font-size="54" font-weight="700">출처가 보이는</text>
+    <text x="34" y="279" fill="#f9fafb" font-size="54" font-weight="700">데이터 관측</text>
+    <text x="34" y="327" fill="#aeb9c9" font-size="17">화면에서 API를 거쳐 읽기 전용 데이터베이스까지 이어지는 흐름을 확인하는</text>
+    <text x="34" y="354" fill="#aeb9c9" font-size="17">작은 데모입니다.</text>
+    <rect x="34" y="396" width="1132" height="332" rx="15" fill="#182231" stroke="#334155"/>
+    <text x="70" y="436" fill="#63d9ba" font-family="Consolas, monospace" font-size="11" letter-spacing="2">LOCAL SAMPLE</text>
+    <text x="70" y="472" fill="#f3f4f6" font-size="22" font-weight="700">관측 기록</text>
+    <rect x="1010" y="430" width="120" height="38" rx="7" fill="#202c3d" stroke="#526176"/>
+    <text x="1035" y="454" fill="#e5e7eb" font-size="13">다시 불러오기</text>
+    <rect x="35" y="494" width="1130" height="40" fill="#141e2c"/>
+    <g fill="#91a0b5" font-size="12" font-weight="600">
+      <text x="65" y="520">기록</text><text x="420" y="520">출처</text><text x="650" y="520">확인</text><text x="845" y="520">관측 시각</text>
+    </g>
+    <g stroke="#293648"><line x1="35" y1="534" x2="1165" y2="534"/><line x1="35" y1="581" x2="1165" y2="581"/><line x1="35" y1="628" x2="1165" y2="628"/><line x1="35" y1="675" x2="1165" y2="675"/></g>
+    <g fill="#f1f5f9" font-size="14" font-weight="600">
+      <text x="65" y="563">정상 출처가 연결된 예시</text><text x="65" y="610">중복 출처 예시 A</text><text x="65" y="657">중복 출처 예시 B</text><text x="65" y="704">출처 정보가 비어 있는 예시</text>
+    </g>
+    <g fill="#9ba9bb" font-family="Consolas, monospace" font-size="12">
+      <text x="420" y="563">sample-source-01</text><text x="420" y="610">sample-source-02</text><text x="420" y="657">sample-source-02</text><text x="420" y="704">—</text>
+      <text x="845" y="563">2026. 1. 12. 18:30</text><text x="845" y="610">2026. 1. 12. 18:35</text><text x="845" y="657">2026. 1. 12. 18:36</text><text x="845" y="704">2026. 1. 12. 18:40</text>
+    </g>
+    <g font-size="12">
+      <rect x="640" y="546" width="82" height="25" rx="13" fill="#182c30" stroke="#286b5c"/><text x="654" y="563" fill="#91e8ce">출처 연결</text>
+      <rect x="640" y="593" width="82" height="25" rx="13" fill="#302a20" stroke="#79623a"/><text x="654" y="610" fill="#f2d394">중복 출처</text>
+      <rect x="640" y="640" width="82" height="25" rx="13" fill="#302a20" stroke="#79623a"/><text x="654" y="657" fill="#f2d394">중복 출처</text>
+      <rect x="640" y="687" width="82" height="25" rx="13" fill="#302126" stroke="#784b51"/><text x="654" y="704" fill="#f0b2b9">출처 없음</text>
+    </g>
+    <text x="70" y="747" fill="#8492a6" font-size="12">모든 행은 로컬에서 생성한 예시입니다. 외부 서비스나 실제 운영 자료를 조회하지 않습니다.</text>
+    <g transform="translate(34 784)">
+      <text x="0" y="0" fill="#63d9ba" font-family="Consolas, monospace" font-size="11">01</text><text x="0" y="23" fill="#e2e8f0" font-size="14" font-weight="600">React 화면</text><text x="0" y="44" fill="#8794a7" font-size="12">상태를 구분해 표시</text>
+      <text x="390" y="0" fill="#63d9ba" font-family="Consolas, monospace" font-size="11">02</text><text x="390" y="23" fill="#e2e8f0" font-size="14" font-weight="600">Spring API</text><text x="390" y="44" fill="#8794a7" font-size="12">읽기 요청만 처리</text>
+      <text x="780" y="0" fill="#63d9ba" font-family="Consolas, monospace" font-size="11">03</text><text x="780" y="23" fill="#e2e8f0" font-size="14" font-weight="600">PostgreSQL</text><text x="780" y="44" fill="#8794a7" font-size="12">SELECT 전용 계정</text>
+    </g>
+  </g>
+</svg>

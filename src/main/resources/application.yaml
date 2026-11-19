@@ -1,0 +1,16 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+spring:
+  datasource:
+    url: ${DEMO_SOURCE_URL:jdbc:postgresql://127.0.0.1:55432/demo_catalog}
+    username: ${DEMO_SOURCE_USERNAME:demo_reader}
+    password: ${DEMO_SOURCE_PASSWORD:}
+    hikari:
+      read-only: true
+      maximum-pool-size: 2
+      minimum-idle: 0
+      connection-timeout: 3000
+      validation-timeout: 2000
+      initialization-fail-timeout: -1
+      connection-init-sql: SET statement_timeout = '3000ms'
